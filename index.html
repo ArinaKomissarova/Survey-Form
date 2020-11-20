@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/index.js"></script>
+</head>
+   <body>
+     <div>
+       <h1 id="title"> Beautiful Flowers. Vast Variety. Same-Day Delivery.</h1>
+     </div>
+     <div>
+       <p id="description"> Order a set of flowers of your choice or make a bouquet with various flowers!</p>
+     </div>
+     <form id="survey-form">
+       <div class="form-group">
+       <label id="name-label"for="name">Name
+         <input 
+                type="text" 
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name" 
+                required>
+       </label>
+       </div>
+     <div class="form-group">
+     <label id="email-label" for="email">Email
+         <input 
+                type="email" 
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email" 
+                required>
+       </label>
+     </div>
+       
+       <div class="form-group">
+      <p>Are you buying a flower or bouquet?</p> 
+<div id="if-flower">
+<label for="flower">
+<input                    
+id="flower"                  
+type="checkbox"  
+       value="flower"
+name="flowers" 
+onclick="myFunction()">Flower</label>
+ 
+<label id="flower1" for="flower1" style="display:none">
+Rose <input class="radio"
+type="radio" 
+name="flower"
+id="flower1"
+class="form-control"
+       value="rose"
+required>
+</label>
+  <label id="flower2" for="flower2" style="display:none">
+Tulip <input
+       class="radio"
+type="radio" 
+name="flower"
+id="flower1"
+class="form-control"
+       value="tulip"
+required>
+</label>
+  <label id="flower3" for="flower3" style="display:none">
+Lily <input
+       class="radio"
+type="radio" 
+name="flower"
+id="flower1"
+class="form-control"
+       value="lily"
+required>
+</label>
+  
+<label id="number-label" for="number" style="display:none">How many do you want to purchase?
+<input
+type="number" 
+name="flowers"
+id="number"
+class="form-control"
+placeholder="Select number of flowers"
+min="10"
+max="99"
+required>
+</label> 
+</div>
+
+<div id="if-bouquet">
+<label for="bouquet">
+<input                 
+id="bouquet"           
+type="checkbox"      
+name="bouquet" 
+       value="Bouquet"
+onclick="myFunction2()">Bouquet</label>
+
+
+<div id="do-this" style="display:none">
+<p>What kind of flower combination would you like to order?</p>
+      <select id="dropdown" name="flowers" class="form-control" required>
+        <option disabled selected value>Select arrangement</option>
+        <option value="rose">Rose, Lily, Tulip</option>
+        <option value="lily">Lily, Tulip, Daffodil</option>
+        <option value="tulip">Daisy, Gardenia, Carnation</option>
+        <option value="chryso">Chrysanthemum, Tu;ip, Daisy</option>
+        <option value="other">Other</option>
+      </select>
+       <p>Let us know if there is anything else you would like in your bouquet!</p>
+        <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here...">
+      </textarea>
+      
+</div>
+</div>
+    </div>
+   <button id="submit" type="submit">Submit
+   </button>
+     </form>
+     </html>
