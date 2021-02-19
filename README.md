@@ -1,2 +1,3 @@
-#This project was created as one of the challanges on FreeCodeCamp
-This is a demonstration of ability to use JavaScript basics
+##Survey-Form Free Code CampChallange
+
+This project shows basic HTML, CSS, and JavaScript features
